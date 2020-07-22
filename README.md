@@ -5,7 +5,7 @@ Home: https://github.com/pcdshub/lucid
 
 Package license: SLAC Open
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: SLAC National Accelerator Laboratory: LCLS User Control and Interface Design
 
