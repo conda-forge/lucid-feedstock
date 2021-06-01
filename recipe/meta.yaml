@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 5f28180461bfb9866778ae7c1bddb5e8464574094800ea5db26965a27e0daa68
+  sha256: c1d25503934a41a5f77ea7f80e8810681e93f8e4677b61107d990c64f6453432
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -41,11 +41,12 @@ about:
   home: https://github.com/pcdshub/lucid
   dev_url: https://github.com/pcdshub/lucid
   summary: 'SLAC National Accelerator Laboratory: LCLS User Control and Interface Design'
-  license: SLAC Open
-  license_family: OTHER
+  license: LicenseRef-BSD-3-Clause-SLAC
+  license_family: BSD
   license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
     - klauer
-    - hhslepicka
+    - zllentz
+    - zrylettc
