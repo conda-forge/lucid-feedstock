@@ -1,5 +1,5 @@
 {% set name = "lucid" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c1d25503934a41a5f77ea7f80e8810681e93f8e4677b61107d990c64f6453432
+  sha256: 8cff910a5b16104bdf0c9f08eabc2a0c8cc3a8479b57abb2c1684e21c1387b3c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -24,6 +24,7 @@ requirements:
     - python >=3.6
     - fuzzywuzzy
     - ophyd
+    - pydm
     - pyqt >=5
     - pyqtads
     - pyyaml
