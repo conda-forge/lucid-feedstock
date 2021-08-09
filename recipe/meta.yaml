@@ -42,10 +42,10 @@ test:
 about:
   home: https://github.com/pcdshub/lucid
   dev_url: https://github.com/pcdshub/lucid
-  summary: 'SLAC National Accelerator Laboratory: LCLS User Control and Interface Design'
+  summary: SLAC National Accelerator Laboratory: LCLS User Control and Interface Design
   license: LicenseRef-BSD-3-Clause-SLAC
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE.md
 
 extra:
   recipe-maintainers:
