@@ -1,5 +1,5 @@
 {% set name = "lucid" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8cff910a5b16104bdf0c9f08eabc2a0c8cc3a8479b57abb2c1684e21c1387b3c
+  sha256: 624d3bd7640757503a2c25064663c4c668ceb461be21f377d0fb427fc7f8ff93
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - python >=3.6
     - fuzzywuzzy
     - ophyd
+    - pcdsutils
     - pydm
     - pyqt >=5
     - pyqtads
@@ -44,7 +45,7 @@ about:
   summary: 'SLAC National Accelerator Laboratory: LCLS User Control and Interface Design'
   license: LicenseRef-BSD-3-Clause-SLAC
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE.md
 
 extra:
   recipe-maintainers:
