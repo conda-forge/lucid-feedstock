@@ -1,5 +1,5 @@
 {% set name = "lucid" %}
-{% set version = "0.9.2" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 0965626d4d2ea2537067f5fbd77a31a65f19caee8a0b680dae0750efd1fef20f
+  sha256: 0a637ab1b05e92132371803eafaa8f36d120fbdc09990216b73a94c4c9b88fbd
 
 build:
   number: 0
@@ -18,10 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
+    - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.9
     - fuzzywuzzy
     - ophyd
     - pcdsutils
@@ -49,6 +50,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/pcdsdevices
     - klauer
+    - tangkong
     - zllentz
-    - zrylettc
