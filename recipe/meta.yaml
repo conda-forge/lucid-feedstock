@@ -1,5 +1,5 @@
 {% set name = "lucid" %}
-{% set version = "0.10.3" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 614bb4396b64b09503a40a366f7777ef25d9021f7b7a6b670de228c6abbb5aaa
+  sha256: ea7f58cf57dc848bec889b6ba2f519c753d27ed12f2c0674b1b44e2cc9e67eb6
 
 build:
   number: 0
