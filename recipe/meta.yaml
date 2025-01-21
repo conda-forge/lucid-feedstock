@@ -10,7 +10,7 @@ source:
   sha256: ea7f58cf57dc848bec889b6ba2f519c753d27ed12f2c0674b1b44e2cc9e67eb6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -18,11 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - fuzzywuzzy
     - ophyd
     - pcdsutils >=0.14.0
@@ -35,6 +36,8 @@ requirements:
     - happi
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - lucid
   commands:
