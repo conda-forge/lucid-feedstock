@@ -1,5 +1,6 @@
 {% set name = "lucid" %}
 {% set version = "1.0.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -18,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.12
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.12
+    - python >={{ python_min }}
     - ophyd
     - pcdsutils >=0.14.0
     - pydm
@@ -35,7 +36,7 @@ requirements:
 
 test:
   requires:
-    - python >=3.12
+    - python {{ python_min }}
   imports:
     - lucid
   commands:
