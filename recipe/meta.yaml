@@ -18,18 +18,16 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.12
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >={{ python_min }}
-    - fuzzywuzzy
+    - python >=3.12
     - ophyd
     - pcdsutils >=0.14.0
     - pydm
     - pyqt =5
-    - pyqtads >=4
     - pyyaml
     - qtpy
     - typhos
@@ -37,7 +35,7 @@ requirements:
 
 test:
   requires:
-    - python {{ python_min }}
+    - python >=3.12
   imports:
     - lucid
   commands:
